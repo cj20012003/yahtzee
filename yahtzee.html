@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content:right;
+      align-items: right;
+      background-color:mediumseagreen ;
+    }
+table, td, th {
+ 
+  border: 3px solid #333;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  text-align: center;
+  background-color: #ABD7EB;
+  color: navy;
+}
+#diceAlternative{
+  border-collapse:collapse;
+  width: 10%;
+  align-items: start;
+}
+
+#table1 {
+  border-collapse: collapse;
+  width: 30%;
+}
+
+#myBtn{
+  padding: 30px;
+  background-color: teal;
+  font-size: larger;
+  font-weight: bolder;
+  color: navy;
+}
+#resultaten{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  font-weight: bold;
+  color: saddlebrown;
+  align-content: flex-start;
+  margin-right: 10px;
+}
+h1{
+  font-size: 500%;
+  color: saddlebrown;
+  font-weight: bold;
+  margin-right: 200px;
+  margin-top: -10px;
+}
+
+
+
+  </style>
+</head>
+<body>
+  <h1>Yahtzee</h1>
+  <p id="resultaten">3 rolls left!!!</p>
+  <table id="diceAlternative">
+    <tr>
+      <td id="diceOne"></td>
+    </tr>
+    <tr>
+      <td id="diceTwo"></td>
+    </tr>
+    <tr>
+      <td id="diceThree"></td>
+    </tr>
+    <tr>
+      <td id="diceFour"></td>
+    </tr>
+    <tr>
+      <td id="diceFive"></td>
+    </tr>
+  </table>
+  <button id="myBtn">Roll</button>
+  <table id="table1">
+      <tr>
+        <th></th>
+        <th>SCORE</th>
+      </tr>
+      <tr>
+        <td>Ones</td>
+        <td id="ones"></td>
+      </tr>
+      <tr>
+        <td>Twos</td>
+        <td id="twos"></td>
+      </tr>
+      <tr>
+        <td>Threes</td>
+        <td id="threes"></td>
+      </tr>
+      <tr>
+        <td>Fours</td>
+        <td id="fours"></td>
+      </tr>
+      <tr>
+        <td>Fives</td>
+        <td id="fives"></td>
+      </tr>
+      <tr>
+        <td>Sixes</td>
+        <td id="sixes"></td>
+      </tr>
+      <tr>
+        <td>Three of a kind</td>
+        <td id="Three-of-a-kind"></td>
+      </tr>
+      <tr>
+        <td>Four of a kind</td>
+        <td id="Four-of-a-kind"></td>
+      </tr>
+      <tr>
+        <td>Full house</td>
+        <td id="Full-house"></td>
+      </tr>
+      <tr>
+        <td>Small straight</td>
+        <td id="Small-straight"></td>
+      </tr>
+      <tr>
+        <td>Large straight</td>
+        <td id="Large-straight"></td>
+      </tr>
+      <tr>
+        <td>Yahtzee</td>
+        <td id="Yahtzee"></td>
+      </tr>
+      <tr>
+        <td>Chance</td>
+        <td id="Chance"></td>
+      </tr>
+      <tr>
+        <th>TOTAL SCORE</th>
+        <td  id="Total-score"></td>
+      </tr>
+  </table>
+    <script src="yahtzee.js"></script>
+</body>
+</html>
